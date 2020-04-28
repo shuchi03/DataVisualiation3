@@ -554,4 +554,5 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
         ])
 ])
 
-app.run_server(debug=True)  # Turn off reloader if inside Jupyter
+if __name__ == '__main__':
+    app.run_server()
